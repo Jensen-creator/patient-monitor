@@ -7,18 +7,18 @@
 
 <h1>Patients</h1>
 
-<a href="/">Back Home</a>
+<a href="/">Home</a>
 
 <hr>
 
 <ul>
-  {% for row in rows %}
+{% for row in rows %}
     <li>
-      <a href="/patient/{{ row[0] }}">
-        Patient {{ row[0] }}
-      </a>
+        <a href="/patient/{{ row[0] }}">
+            Patient {{ row[0] }}
+        </a>
     </li>
-  {% endfor %}
+{% endfor %}
 </ul>
 
 </body>
