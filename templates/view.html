@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Records</title>
+</head>
+<body>
+
+<h2>Stored Patient Vitals</h2>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Temperature</th>
+        <th>SpO2</th>
+        <th>RR</th>
+    </tr>
+
+    {% for row in rows %}
+    <tr>
+        <td>{{ row[0] }}</td>
+        <td>{{ row[1] }}</td>
+        <td>{{ row[2] }}</td>
+        <td>{{ row[3] }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+<br>
+<a href="/">Back</a>
+
+</body>
+</html>
