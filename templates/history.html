@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient History</title>
+</head>
+<body>
+
+<h1>Patient {{ patient_id }} History</h1>
+
+<a href="/patients">Back to Patients</a>
+
+<hr>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Temperature</th>
+        <th>SpO2</th>
+        <th>RR</th>
+        <th>Timestamp</th>
+    </tr>
+
+    {% for row in rows %}
+    <tr>
+        <td>{{ row[0] }}</td>
+        <td>{{ row[2] }}</td>
+        <td>{{ row[3] }}</td>
+        <td>{{ row[4] }}</td>
+        <td>{{ row[5] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>

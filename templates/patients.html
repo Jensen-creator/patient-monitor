@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patients</title>
+</head>
+<body>
+
+<h1>Patients</h1>
+
+<a href="/">Back Home</a>
+
+<hr>
+
+<ul>
+  {% for row in rows %}
+    <li>
+      <a href="/patient/{{ row[0] }}">
+        Patient {{ row[0] }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>
